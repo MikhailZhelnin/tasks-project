@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test.describe("Home page", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("http://localhost:5173");
+    await page.goto("/");
   });
 
   test("shoud have correct metadata and elements", async ({ page }) => {
@@ -19,7 +19,7 @@ test.describe("Home page", () => {
 
 test.describe("Tasks Page", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("http://localhost:5173/tasks");
+    await page.goto("/tasks");
   });
 
   test("shoud have correct metadata and elements", async ({ page }) => {
